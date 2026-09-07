@@ -19,7 +19,7 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <main> <!-- fiyo kelchi content lal page mamnou3 ykun fi aktr mn whde main-->
+    <main> <!-- fiyo kelchi content lal page w mamnou3 ykun fi aktr mn whde main-->
 
         <section id="about"> <!-- hayde btejma3 kamiyet content sawa elun aale2a baad wel id kermel bs nekbus aa about khdna aa ha l page-->
             <h2>About Me</h2> <!-- sub level whde awta mn l h1 w fi baad nzoul h3,4 ... -->
@@ -31,27 +31,27 @@
             </p>
 
             <!-- profile picture -> figure/figcaption hiye semantic tags, btkhaber l browser eno hayde soura
-                 w taht fiya chi caption/description ,-->
+                 w taht fiya chi caption/description -->
             <figure>
-                <img src="profile.jpg" alt="Photo of Me" width="300">
-                <figcaption>Charbel Meouchy Computer &amp; Communications Engineering student</figcaption>
+                <img src="profile.jpg" alt="Charbel Meouchy sitting on a bike, wearing a black hoodie" width="300"> <!-- ma hatet sourte hatet anonymous pic maa chweyt text tahta -->
+                <figcaption>Charbel Meouchy Computer &amp; Communications Engineering student </figcaption>
             </figure>
 
             <h3>A Bit More About Me</h3> <!-- h3 kermel heading aan l about section, taht holik l h2 -->
 
             <p>
-                I am a hardworking and determined person who always 
-                tries to give my best in everything I do. When I start 
-                something, I like to finish it and achieve my goals. I also take my 
+                I am a hardworking and determined person who always
+                tries to give my best in everything I do. When I start
+                something, I like to finish it and achieve my goals. I also take my
                 responsibilities seriously and prefer to complete my work on time rather than waiting until the deadline.
 
             </p>
 
             <p>
-                I enjoy learning new things and challenging myself to 
-                improve every day. I like working on projects that allow 
-                me to be creative and develop my skills, especially in technology 
-                and coding. I always try to stay motivated and keep improving, even when 
+                I enjoy learning new things and challenging myself to
+                improve every day. I like working on projects that allow
+                me to be creative and develop my skills, especially in technology
+                and coding. I always try to stay motivated and keep improving, even when
                 things become difficult..
             </p>
         </section>
@@ -61,9 +61,7 @@
 
             <p>
                 I study Computer and Communications Engineering
-                at ESIB. I am interested in technology, programming,
-                and learning more about how computers and communication
-                systems work.
+                at ESIB.
             </p>
         </section>
 
@@ -81,7 +79,13 @@
 
             <form action="#" method="post"> <!-- action=# bt khalle l browser yaarf wen lezim ybaat data baad submit bs hon hatin # l2n mafi baad mahal
                 w method bt oulal browser kif yebaat data mtln hon post la nb3at infos mtl pass w messages w ho (Send the form data in the HTTP request body)-->
-                <div> <!--div huwe container btjamie3 elements saawa fa aam njami3 kel part mn l form bi div-->
+                <div> <!-- name w email required l messaage mch daroure ,, explanation la lfirst div:for w id share same "name" so they are linked and type text means eno l chi li aam yenhat lzm ykun text w
+                    name=".." btaate name lal submited data and required yaane ejbare-->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div> <!--div huwe container mn jami3 elements sawa fa aam njami3 kel part mn l form bi div-->
                     <label for="email">Email:</label> <!--l kelme had l email box-->
                     <input type="email" id="email" name="email" required> <!--byen3amal l box li bdo yenkatab fiya w l system bisir eerif eno lzm yfit email fa bi chayik l format and required yaane ejbare ykun fi chi bhal case-->
                 </div>
@@ -89,11 +93,6 @@
                 <div>
                     <label for="message">Message:</label><br>
                     <textarea id="message" name="message" rows="5" required></textarea> <!-- text area btaaml multi line box btkun kbire mn hadid hajma bi rows="..." fa textarea mn sakera mch mtl l input li ma btetsakar-->
-                </div>
-
-                <div>
-                    <label for="location">Location (optional):</label>
-                    <input type="text" id="location" name="location">
                 </div>
 
                 <button type="submit">Send</button>
