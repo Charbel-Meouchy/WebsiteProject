@@ -99,3 +99,11 @@ figcaption {
     color: hsl(215, 10%, 45%);
     margin-top: 0.5rem;
 }
+
+#skills ul {
+    padding-left: 1.5rem;
+}
+
+#skills li {
+    margin-bottom: 0.5rem;
+}
