@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
-}
+    box-sizing: border-box; 
+} 
 
 body {
     margin: 0;
@@ -79,4 +79,23 @@ section {
     font-size: 1.25rem;
     font-weight: 600;
     color: hsl(205, 70%, 40%);
+}
+
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.profile-photo {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid hsl(205, 70%, 45%);
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: hsl(215, 10%, 45%);
+    margin-top: 0.5rem;
 }
