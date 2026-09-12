@@ -1,43 +1,49 @@
-<!DOCTYPE html> <!--  bi oul lal browser eno ha html page  -->
+<!DOCTYPE html>
 <html lang="en">
-<head> <!-- hay yje fiya chi esmo metadata (li hiye data about the data fa hiye bt fasir l content bala ma tkun part menno) eno infos aan l page -->
-    <meta charset="UTF-8"> <!-- bt fasir aya character encoding ha t3uz l page-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewpoert kermel l mobile w UFT-8 lal character incoding bs ho kellun osas mch visible aal page-->
-    <title>WebClass</title> <!-- title lal browser tab l esem li bi bayin fo2  -->
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebClass</title>
 </head>
 
-<body> <!-- Hon kelchi visible aal page-->
+<body>
 
     <header>
-        <h1>About Me - Charbel Meouchy</h1> <!-- a3la heading bel page-->
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#studies">My Studies</a>
+            <a href="#goals">My Goals</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <nav> <!-- hayde kermel block of nav links fa kel whde men l a href hiye link fa bs tkbus aalya btkhdk aal page li eenda hal id-->
-        <a href="#about">About Me</a>
-        <a href="#studies">My Studies</a>
-        <a href="#goals">My Goals</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
-    <main> <!-- fiyo kelchi content lal page w mamnou3 ykun fi aktr mn whde main-->
+    <main>
+        <section id="hero"> 
+            <h1>Charbel Meouchy</h1> 
+            <p class="tagline">CCE Student &amp; Aspiring AI Engineer</p>
+            <p>
+                Welcome to my personal portfolio. Here you can learn more
+                about me, my studies, my skills, and how to get in touch.
+            </p>
+        </section>
 
-        <section id="about"> <!-- hayde btejma3 kamiyet content sawa elun aale2a baad wel id kermel bs nekbus aa about khdna aa ha l page-->
-            <h2>About Me</h2> <!-- sub level whde awta mn l h1 w fi baad nzoul h3,4 ... -->
-
-            <p> <!-- paragraph katibe aaade-->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
                 I am 21 years old. I love basketball, working out,
                 technology, and coding. I also enjoy activities in nature,
                 such as hiking.
             </p>
 
-            <!-- profile picture -> figure/figcaption hiye semantic tags, btkhaber l browser eno hayde soura
-                 w taht fiya chi caption/description -->
             <figure>
-                <img src="profile.jpg" alt="Charbel Meouchy sitting on a bike, wearing a black hoodie" width="300"> <!--alt text kermel eza hada mch edir ychuf soura aw ma aam tbayin eendo bichuf text hek byaarf chu hiye -->
+                <img src="profle.jpg" alt="Charbel Meouchy sitting on a bike, wearing a black hoodie" width="300">
                 <figcaption>Charbel Meouchy Computer &amp; Communications Engineering student </figcaption>
             </figure>
 
-            <h3>A Bit More About Me</h3> <!-- h3 kermel heading aan l about section, taht holik l h2 -->
+            <h3>A Bit More About Me</h3>
 
             <p>
                 I am a hardworking and determined person who always
@@ -74,25 +80,23 @@
             </p>
         </section>
 
-        <section id="contact"> <!-- contact form: email w message required, location optional , w hatayna id la naaml link la hal section-->
+        <section id="contact">
             <h2>Contact Me</h2>
 
-            <form action="#" method="post"> <!-- action=# bt khalle l browser yaarf wen lezim ybaat data baad submit bs hon hatin # l2n mafi baad mahal
-                w method bt oulal browser kif yebaat data mtln hon post la nb3at infos mtl pass w messages w ho (Send the form data in the HTTP request body)-->
-                <div> <!-- name w email required l messaage mch daroure ,, explanation la lfirst div:for w id share same "name" so they are linked and type text means eno l chi li aam yenhat lzm ykun text w
-                    name=".." btaate name lal submited data and required yaane ejbare-->
+            <form action="#" method="post">
+                <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
 
-                <div> <!--div huwe container mn jami3 elements sawa fa aam njami3 kel part mn l form bi div-->
-                    <label for="email">Email:</label> <!--l kelme had l email box-->
-                    <input type="email" id="email" name="email" required> <!--byen3amal l box li bdo yenkatab fiya w l system bisir eerif eno lzm yfit email fa bi chayik l format and required yaane ejbare ykun fi chi bhal case-->
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
 
                 <div>
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" required></textarea> <!-- text area btaaml multi line box btkun kbire mn hadid hajma bi rows="..." fa textarea mn sakera mch mtl l input li ma btetsakar-->
+                    <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
 
                 <button type="submit">Send</button>
@@ -101,7 +105,7 @@
 
     </main>
 
-    <footer> <!-- bs bdk tenhe l page metl l closing content-->
+    <footer>
         <p> 2026 Charbel Meouchy</p>
     </footer>
 
