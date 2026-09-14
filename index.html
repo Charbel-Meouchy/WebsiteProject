@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- tell the browser which character encoding to use-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charbel-Meouchy Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Charbel-Meouchy Portfolio</title> <!--the title of the entire webpage-->
+    <link rel="stylesheet" href="css/style.css"> <!-- just linking the css page-->
 </head>
 
 <body>
 
     <header>
         <nav>
-            <a href="#hero">Home</a>
+            <a href="#hero">Home</a> <!-- navigation links that when clicked takes us to the section with that id:
+            2 parts first the name between parenthese what we see and the after # tell the browser where to go-->
             <a href="#about">About Me</a>
             <a href="#studies">My Studies</a>
             <a href="#goals">My Goals</a>
@@ -22,8 +23,8 @@
 
 
     <main>
-        <section id="hero"> 
-            <h1>Charbel Meouchy</h1> 
+        <section id="hero"> <!--using id to give this section a name to be able to jumo to using the nav links-->
+            <h1>Charbel Meouchy</h1> <!-- main header than h2 h3 ... -->
             <p class="tagline">CCE Student &amp; Aspiring AI Engineer</p>
             <p>
                 Welcome to my personal portfolio. Here you can learn more
@@ -41,6 +42,8 @@
 
             <figure>
                 <img class ="profile-photo" src="images/profile.jpg" alt="A Photo Of Charbel Meouchy standing wearing a white tshirt with a plain gray background">
+                <!--figure used for content like image , we gave image a class to design in css , alt is a text for
+                a person who doesnt see the pic to know what is and src just location of the pic-->
                 <figcaption>Charbel Meouchy Computer &amp; Communications Engineering student </figcaption>
             </figure>
 
@@ -83,7 +86,7 @@
 
         <section id="skills"> 
             <h2>Skills</h2>
-            <ul> 
+            <ul> <!-- this is an unordered list so items appear with bullets next to them and each li is a list item -->
                 <li>HTML &amp; CSS</li>
                 <li>C++</li>
                 <li>Python</li>
@@ -95,10 +98,13 @@
         <section id="contact">
             <h2>Contact Me</h2>
 
-            <form action="#" method="post">
+            <form action="#" method="post"> <!-- to create a form for people to fill first action tell the 
+                the browser where to send data but here we used # since no location yet and methode specify how to 
+                data is sent-->
                 <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name:</label> <!-- the label is for the input field-->
+                    <input type="text" id="name" name="name" required> <!--type mean the user should enter this type like email,text
+                    and stuff and required means its obligated to enter something cant leave empty + id like before to link only-->
                 </div>
 
                 <div>
@@ -111,7 +117,7 @@
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
 
-                <button type="submit">Send</button>
+                <button type="submit">Send</button>  <!-- this means this button submits the form-->
             </form>
         </section>
 
