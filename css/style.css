@@ -1,14 +1,15 @@
+/* note: if i comment on something and its mentioned again i will not comment it again since it will have the same */
 * {
     box-sizing: border-box; /* Added this for the sizing since now if lets say i put width 200px it will acutally be 200 
-    since it will include padding and border now*/
+    since it will include padding and border now and i used the universal selector * that means it applies to everything*/
 } 
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* browsers normally give elems default margin i removed it */
+    padding: 0; /* removing the body's default inside spacing */
     font-family: 'Segoe UI', system-ui, sans-serif; /* try those one by one start with the first if not switch to the second one and so on*/
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1rem; /* 1rem means 16px but i prefer using rem*/
+    line-height: 1.6; /* means the vertical spacing between lines */
     color: hsl(215, 15%, 20%); /* hsl stands for hue,saturation and lightness (very accurate way to pick the exact color i want */
     background-color: hsl(210, 20%, 97%);
 }
@@ -16,15 +17,14 @@ body {
 h1,
 h2,
 h3 {
-    font-weight: 700;
+    font-weight: 700; /* this just controls how bold the text is 400,500,600,700 */
     color: hsl(215, 45%, 20%);
 }
 
 h1 {
     font-size: 2.5rem;
     line-height: 1.15;
-    margin: 0 0 0.5rem 0; /* Used rem in everything here which equals to 16px each rem (1rem = 16px) since i found that i am more able to change 
-    and find the actual size that i am looking for easier */
+    margin: 0 0 0.5rem 0; /* this means: top is 0 right as well buttom is 0.5rem and left is 0 so syntaxe is top right buttom left */
 }
 
 h2 {
@@ -49,7 +49,7 @@ header {
 
 nav a {
     color: hsl(0, 0%, 100%);
-    text-decoration: none;
+    text-decoration: none; /* when we used links before css they had line underneath this removes it*/
     font-weight: 600;
     margin-right: 1.5rem;
 }
@@ -57,13 +57,13 @@ nav a {
 footer {
     background-color: hsl(215, 45%, 20%);
     color: hsl(0, 0%, 100%);
-    text-align: center;
+    text-align: center; /* centering the text horizontally */
     padding: 1.5rem;
 }
 
 main {
-    max-width: 45rem;
-    margin: 0 auto;
+    max-width: 45rem; /* setting the max of how much can my content grow since i dont want text to get too streched */
+    margin: 0 auto; /* this means top/buttom 0 but right/left auto (based on device) */
     padding: 2rem 1.5rem;
 }
 
@@ -89,11 +89,11 @@ figure {
 }
 
 .profile-photo {
-    display: block;
+    display: block; /* changes the image's display behavior to a block-level element. */
     width: 200px;
-    height: auto;
+    height: auto; /* auto means the browser calculate the height based on image initial proportion to not ruin it */
     margin: 0 auto;
-    border: 3px solid hsl(205, 70%, 45%);
+    border: 3px solid hsl(205, 70%, 45%); /*this comes in this form: (thickness , style, color) so we can controll everything*/
 }
 
 figcaption {
@@ -133,9 +133,9 @@ textarea {
 button {
     background-color: hsl(205, 70%, 45%);
     color: hsl(0, 0%, 100%);
-    border: none;
+    border: none; /* Removes the border around the button which comes by default */
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
+    cursor: pointer; /* when a person moves their mouse over the button the cursor changes to a hand */
 }
