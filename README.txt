@@ -10,6 +10,7 @@ I set box-sizing: border-box for the entire website to get the right dimensions,
 Set a body typography as well as a consistent sizing, weight, line-height for all headers and paragraphs.
 Assignment requirements checklist:
 
+Proof of sticking to all rules:
 Semantic HTML only (header, nav, main, section, footer) ,no divs used in the structural elements just used it in the contact form where i used it to group each label alone not for page structure.
 All four required sections included: Hero/Intro, About Me, Skills, Contact and i added two extra sections which are: (My Studies and My Goals).
 Custom external stylesheet css/style.css no CSS framework used.
